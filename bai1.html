@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn hơn 10</title>
+</head>
+<body>
+    <script>
+        let arr1 =[10,9, 3, 4, 2,1,5,32,25,65];
+        let count = 0;
+        let b = new Array();
+        let j=0;
+        for (let i = 0; i <arr1.length ; i++) {
+            if (arr1[i]>=10){
+                b[j]=arr1[i];
+                j++;
+                count++;
+            }
+        }
+        document.write(b);
+        document.write('</br> số lượng phần tử lớn hơn 10 là '+ count);
+
+    </script>
+
+</body>
+</html>

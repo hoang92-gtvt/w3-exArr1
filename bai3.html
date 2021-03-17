@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trung bình</title>
+</head>
+<body>
+    <script>
+        let arr2 = [1,232,23,485, 82,429]
+        let max = arr2[0];
+        let sum= arr2[0]
+        let k;
+        for ( let i = 1; i < arr2.length ; i++) {
+            if (arr2[i]>max){
+                max= arr2[i];
+                k=i;
+
+            }
+            sum +=arr2[i]
+        }
+        document.write('Giá trị lớn nhất là '+ max + ' tại vị trí a['  + k + ']')
+        document.write('</br> Giá trị trung bình là '+ (sum/arr2.length) )
+    </script>
+</body>
+</html>

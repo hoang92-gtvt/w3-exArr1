@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên âm</title>
+</head>
+<body>
+    <script>
+        let arr5 = [ 2, -1, 6, 9, -5];
+        let count5=0;
+        let arr6=[];
+        for (let i = 0; i < arr5.length ; i++) {
+            if (arr5[i]<0){
+                arr6[count5]=arr5[i];
+                count5++;
+            }
+        }
+        document.write(arr6)
+        document.write('</br> số lượng số nguyên âm trong mảng '+(count5))
+    </script>
+
+</body>
+</html>

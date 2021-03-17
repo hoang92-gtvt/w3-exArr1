@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+    <script>
+        let soluong1 = parseInt(prompt('Nhập số lượng phần tử mảng 1'));
+        let arr9_1 =[];
+        for (let i = 0; i <soluong1 ; i++) {
+            arr9_1[i]=parseInt(prompt('Nhập phần tử thứ '+i)) ;
+        }
+        console.log(arr9_1)
+        let soluong2 = parseInt(prompt('Nhập số lượng phần tử mảng 2'));
+        let arr9_2 =[];
+        for (let i = 0; i <soluong2 ; i++) {
+            arr9_2[i]=parseInt(prompt('Nhập phần tử thứ '+i)) ;
+        }
+        console.log(arr9_2)
+         let arr9=[]
+        for (let i = 0; i <arr9_1.length ; i++) {
+            arr9[i]=arr9_1[i];
+        }
+        for (let i = 0; i <arr9_2.length ; i++) {
+            arr9[arr9_1.length +i] =arr9_2[i];
+        }
+        console.log(arr9);
+    </script>
+
+</body>
+</html>

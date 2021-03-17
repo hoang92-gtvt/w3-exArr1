@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri trong mang</title>
+</head>
+<body>
+    <script>
+        let arr6=[3, 4, 5, 6, 7, 8, 9];
+        let v=prompt('Nhập giá trị V muốn xóa');
+        let thongbao = false;
+        console.log(arr6);
+        let posDelete;
+        for (let i = 0; i <arr6.length ; i++) {
+            if(v==arr6[i]){
+                thongbao = true;
+            posDelete=i
+            }
+
+        }
+        for (let i = posDelete; i <arr6.length ; i++) {
+
+            arr6[i]=arr6[i+1];
+        }
+        let arr7_2= [];
+        for (let i = 0; i < arr6.length-1; i++) {
+            arr7_2[i]=arr6[i];
+        }
+
+        if (thongbao==false){
+            alert('Giá trị V không tồn tại')
+        }else{
+            alert('giá trị V tồn tại trong mảng')
+            alert('Đã xóa phần tử V trong mảng')
+        }
+        console.log(arr7_2);
+    </script>
+</body>
+</html>

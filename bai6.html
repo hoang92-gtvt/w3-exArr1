@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri trong mang</title>
+</head>
+<body>
+    <script>
+        let arr6=[3, 4, 5, 6, 7, 8, 9];
+        let v=prompt('Nhập giá trị V');
+        let thongbao = false;
+        for (let i = 0; i <arr6.length ; i++) {
+            if(v==arr6[i]){
+                thongbao = true;
+            }
+        }
+        if (thongbao==false){
+            alert('Giá trị V không tồn tại')
+        }else{
+            alert('giá trị V tồn tại trong mảng')
+        }
+    </script>
+</body>
+</html>
